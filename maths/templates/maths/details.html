@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+
+{% block title %}Maths list{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-4">
+        <h1>Wynik operacji</h1>
+    </div>
+    <div class="col">
+        <table class="table table-striped">
+            <tbody>  
+                <tr>
+                    <th scope="row">Operation</th>
+                    <td>{{ math.operation }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">a</th>
+                    <td>{{ math.a }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">b</th>
+                    <td>{{ math.b }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">result</th>
+                    <td>{{ math.result }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">created</th>
+                    <td>{{ math.created }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a class="btn btn-success" href="{% url 'maths:list' %}">Back</a>
+    </div>
+</div>
+
+
+{% endblock %}

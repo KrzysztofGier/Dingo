@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="posts.author" pk="1">
+        <field name="nick" type="CharField">Adam Mickiewicz</field>
+        <field name="bio" type="TextField">polski poeta, dzia³acz polityczny, publicysta, t³umacz, filozof, dzia³acz religijny, mistyk, organizator i dowódca wojskowy, nauczyciel akademicki...</field>
+        <field name="email" type="CharField">adam.mickiewicz@gmail.com</field>
+    </object>
+    <object model="posts.author" pk="2">
+        <field name="nick" type="CharField">LukaszZytko</field>
+        <field name="bio" type="TextField"><None></None></field>
+        <field name="email" type="CharField">lukasz@zytko.pl</field>
+    </object>
+    <object model="posts.author" pk="3">
+        <field name="nick" type="CharField">Zoœka</field>
+        <field name="bio" type="TextField"><None></None></field>
+        <field name="email" type="CharField">zosia@zytko.pl</field>
+    </object>
+    <object model="posts.author" pk="7">
+        <field name="nick" type="CharField">Maria Konopnicka</field>
+        <field name="bio" type="TextField"><None></None></field>
+        <field name="email" type="CharField">maria@konopnicka.pl</field>
+    </object>
+    <object model="posts.author" pk="8">
+        <field name="nick" type="CharField">Seweryn Krajewski</field>
+        <field name="bio" type="TextField"><None></None></field>
+        <field name="email" type="CharField">serweryn@krajewski.pl</field>
+    </object>
+    <object model="posts.author" pk="9">
+        <field name="nick" type="CharField">test</field>
+        <field name="bio" type="TextField">autor testowy</field>
+        <field name="email" type="CharField">test@test.pl</field>
+    </object>
+    <object model="posts.author" pk="10">
+        <field name="nick" type="CharField">test2</field>
+        <field name="bio" type="TextField"></field>
+        <field name="email" type="CharField">test@test.pl</field>
+    </object>
+</django-objects>

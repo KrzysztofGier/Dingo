@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block title %}Maths list{% endblock %}
+
+{% block content %}
+
+<p>Wybier rodzaj operacji:</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="go">
+</form>
+
+{% if maths %}
+    <h2>Operacje:</h2>
+    {% for m in maths %}
+        <li><a href="{% url 'maths:details' m.id %}">{{ m }}</a></li>
+    {% endfor %}
+{% endif %}
+
+
+{% endblock%}

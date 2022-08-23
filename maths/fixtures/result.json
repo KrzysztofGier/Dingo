@@ -1,0 +1,130 @@
+[
+{
+    "model": "maths.result",
+    "pk": 2,
+    "fields": {
+        "value": 3.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 3,
+    "fields": {
+        "value": -10.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 4,
+    "fields": {
+        "value": 5.5,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 5,
+    "fields": {
+        "value": 100.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 7,
+    "fields": {
+        "value": null,
+        "error": "ZeroDivisionError"
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 8,
+    "fields": {
+        "value": 123.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 9,
+    "fields": {
+        "value": 1.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 10,
+    "fields": {
+        "value": null,
+        "error": "B��d"
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 11,
+    "fields": {
+        "value": 123444.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 12,
+    "fields": {
+        "value": 46.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 13,
+    "fields": {
+        "value": null,
+        "error": "Error"
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 14,
+    "fields": {
+        "value": 111.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 15,
+    "fields": {
+        "value": 25.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 16,
+    "fields": {
+        "value": 225.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 17,
+    "fields": {
+        "value": 5.0,
+        "error": null
+    }
+},
+{
+    "model": "maths.result",
+    "pk": 18,
+    "fields": {
+        "value": 50.0,
+        "error": null
+    }
+}
+]

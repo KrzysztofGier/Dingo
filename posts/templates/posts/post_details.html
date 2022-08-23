@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% load bootstrap4 %}
+
+{% block title %}Szczegóły wpisu{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-2">
+        {% if post.image %}
+        <img src="{{ post.image.url }}" width="150px">
+        {% endif %}
+    </div>
+    <div class="col">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+        {% if tags %}
+        <p>Tagi: {% for t in tags %} {{ t }}, {% endfor %}</p>
+        {% endif %}
+        <p><strong>Data publikacji:</strong> {{ post.create }}</p>
+        <p><strong>Autor:</strong> <a href="{% url 'blog:author_details' post.author_id %}">{{ post.author }}</a></p>
+        <p class="float-right"><a class="btn btn-success" href="{% url 'blog:posts_list' %}">Wróć do listy postów</a></p>
+    </div>
+</div>
+<div class="row">
+    {{ data }}
+</div>
+{% endblock %}
+

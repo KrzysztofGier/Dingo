@@ -1,0 +1,27 @@
+{% extends "books/main.html" %}
+{% load bootstrap4 %}
+
+{% block title %}{{book.title}} || Library{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-3">    
+        {% if book.image %}
+        <img src="{{ book.image.url }}" width="240px">
+        {% endif %}
+    </div>
+    <div class="col">
+        <h1>{{ book.title }}</h1>
+        <h5><a href="{% url 'books:author_details' book.author_id %}">{{ book.author }}</a></h5>
+        <p>{{ book.description }}</p>
+        <p><strong>Tags:</strong>
+            {% for t in tags %}
+            <a href="{% url 'books:tag_details' t.id %}">{{ t }}</a>, 
+            {% endfor %}
+        </p>
+        <p class="float-right"><a class="btn btn-primary" style="background-color: #023d64;" href="{% url 'books:books_list' %}">Back</a></p>
+    </div>
+</div>
+    
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "main.html" %}
+{% load bootstrap4 %}
+{% block title %}Maths list{% endblock %}
+
+{% block content %}
+<div class="row">
+    <form class="form-inline float-left mb-1" method="post">
+        <label>Sortuj wg operacji:</label>
+        {% csrf_token %}
+        {% bootstrap_field form.operation layout='horizontal' size="sm" show_label=False %}
+        {% bootstrap_button "OK" button_type="submit" button_class="btn-success btn-sm" %}
+    </form>
+</div>
+<div class="row">
+    <div class="col">
+        
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">a</th>
+                <th scope="col">b</th>
+                <th scope="col">operation</th>
+                <th scope="col">reslult</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for m in maths %}  
+                    <tr>
+                        <th scope="row"><a href="{% url 'maths:details' m.id %}">{{ m.id }}</a></th>
+                        <td>{{ m.a }}</td>
+                        <td>{{ m.b }}</td>
+                        <td>{{ m.operation }}</td>
+                        <td>{{ m.result }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="text-center">
+            <div class="btn-group" role="group">
+                    {% if maths.has_previous %}
+                        <a class="btn btn-outline-dark btn-sm" href="?page=1"><< first</a>
+                        <a class="btn btn-outline-dark btn-sm" href="?page={{ maths.previous_page_number }}">previous</a>
+                    {% endif %}
+                    
+                        <button class="btn btn-dark btn-sm">Page {{ maths.number }} of {{ maths.paginator.num_pages }}</button>
+
+                    {% if maths.has_next %}
+                        <a class="btn btn-outline-dark btn-sm" href="?page={{ maths.next_page_number }}">next</a>
+                        <a class="btn btn-outline-dark btn-sm" href="?page={{ maths.paginator.num_pages }}">last >></a>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h2 class="text-center"><span class="align-middle">Statistics</span></h2>
+    </div>
+</div>
+{% endblock %}

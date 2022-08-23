@@ -1,0 +1,28 @@
+{% extends "books/main.html" %}
+{% load bootstrap4 %}
+
+{% block title %}{{ author.name }} || Library{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-5">
+        <h1>{{ author.name }}</h1>
+        <p>{{ author.bio }}</p>
+        <p class="float-right"><a class="btn btn-primary" style="background-color: #023d64;" href="{% url 'books:authors_list' %}">Back</a></p>
+    </div>
+    <div class="col">
+        <h4>{{ author.name }}'s books list:</h4>
+        <ul>
+        {% for b in books %}
+            <li>
+                <a href="{% url 'books:book_details' b.id %}">
+                    <img class="p-1" src="{{ b.image.url }}" width="50px">{{ b.title }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+    
+
+{% endblock %}

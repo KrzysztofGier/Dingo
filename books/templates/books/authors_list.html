@@ -1,0 +1,15 @@
+{% extends "books/main.html" %}
+{% load bootstrap4 %}
+
+{% block title %}Authors list || Library{% endblock %}
+
+{% block content %}
+<div class="row">
+    <h1>Authors list</h1>
+    <ul>
+    {% for a in authors %}
+    <li><a href="{% url 'books:author_details' a.id %}">{{ a.name }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}

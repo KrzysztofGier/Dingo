@@ -1,0 +1,79 @@
+[
+{
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+        "title": "Pan Tadeusz",
+        "content": "Litwo! Ojczyzno moja! ty jesteœ jak zdrowie. Ile ciê trzeba ceniæ, ten tylko siê dowie, Kto ciê straci³. Dziœ piêknoœæ tw¹ w ca³ej ozdobie Widzê i opisujê, bo têskniê po tobie.",
+        "create": "2022-03-13T14:34:39.586Z",
+        "modified": "2022-03-13T14:38:51.737Z",
+        "author": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+        "title": "Lorem ipsum dolor sit amet",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "create": "2022-03-13T14:40:57.609Z",
+        "modified": "2022-03-13T14:41:38.265Z",
+        "author": 2
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+        "title": "Wiersz dla taty",
+        "content": "Mój tata jest kochany, bo lubi jeœæ banany",
+        "create": "2022-03-13T14:44:30.689Z",
+        "modified": "2022-03-13T14:44:30.689Z",
+        "author": 3
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+        "title": "Opowieœci z Narni",
+        "content": "Opowieœæ o czwórce rodzeñstwa: Piotrze, Zuzannie, Edmundzie i £ucji...",
+        "create": "2022-03-16T21:08:13.333Z",
+        "modified": "2022-03-16T21:08:13.333Z",
+        "author": 3
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 7,
+    "fields": {
+        "title": "Dym",
+        "content": "Ile razy spojrza³a w okno swej izdebki, tyle razy widzieæ go mog³a, jak z ogromnego komina fabryki wali³ siwym s³upem. Nieraz nawet umyœlnie odrywa³a od roboty stare swoje oczy, aby rzuciæ na niego choæ jedno spojrzenie. W spojrzeniu tym by³a dziwna b³ogoœæ i jakby pieszczota. Ludzie szli i przechodzili, œpiesz¹c w ró¿ne strony, rzadko który spojrza³ w górê w kierunku komina, jeszcze rzadszy zauwa¿y³ sin¹ smugê dymu. Ale dla niej dym ten mia³ szczególne znaczenie, mówi³ do niej, rozumia³a go, by³ w jej oczach niemal ¿yw¹ istot¹.",
+        "create": "2022-03-17T21:54:24.695Z",
+        "modified": "2022-03-17T21:54:24.696Z",
+        "author": 7
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 8,
+    "fields": {
+        "title": "Trzecia mi³oœæ - ¿agle",
+        "content": "Ucich³ wiatr, morze œpi w blasku gwiazd\r\nWspomnê znów mi³oœæ sw¹ w taki czas\r\nSmuk³y mia³a kszta³t, ostro sz³a na wiatr\r\nMoja ³ódŸ, pierwsza ³ódŸ - mi³oœæ ma\r\nKa¿dy, kto kocha wiatr, wie jak jest\r\nKiedy ju¿ z oczu nam ginie brzeg\r\nWiatr na wantach gra, morze rusza w tan\r\nKiedy kil znaczy œlad poœród pian",
+        "create": "2022-03-17T22:01:46.267Z",
+        "modified": "2022-03-17T22:01:46.267Z",
+        "author": 8
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 9,
+    "fields": {
+        "title": "test",
+        "content": "test",
+        "create": "2022-03-20T08:38:59.056Z",
+        "modified": "2022-03-20T08:38:59.056Z",
+        "author": 1
+    }
+}
+]

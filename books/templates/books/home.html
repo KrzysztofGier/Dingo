@@ -1,0 +1,37 @@
+{% extends "books/main.html" %}
+{% load bootstrap4 %}
+
+{% block title %}Library || Your private collection{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-6">
+        <h2>Books list</h2>
+        <ul>
+        {% for b in books %}
+        <li>
+            <a href="{% url 'books:book_details' b.id %}">{{ b.title }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="col-6">
+        <h2>Authors list</h2>
+        <ul>
+        {% for a in authors %}
+        <li>
+            <a href="{% url 'books:author_details' a.id %}">{{ a.name }}</a>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+<div>
+    <h2>Tags</h2>
+    <p>
+        {% for t in tags %}
+        <a href="{% url 'books:tag_details' t.id %}">{{ t }}</a>, 
+        {% endfor %}
+    </p>
+</div>
+{% endblock %}

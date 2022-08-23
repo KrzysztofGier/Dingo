@@ -1,0 +1,42 @@
+{% extends "greetings/main.html" %}
+{% load static %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h1>Kontakt</h1>
+        <ul>
+            <li>Imię i nazwisko: <strong>K G</strong></li>
+            <li>Adres: <strong>Kielce</strong></li>
+            <li>Email: <strong>krzysztof.gierczak@gmail.com</strong></li>
+        </ul>
+    </div>
+    <div class="col">
+        <form>
+            <table>
+                <tr>
+                    <td><label>Imię:</label></td>
+                    <td><input type="text" placeholder="Podaj swoje imię" required></td>
+                </tr>
+                <tr>
+                    <td><label>Twój email:</label></td>
+                    <td><input type="email" placeholder="Podaj email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Wiadomość</label></td>
+                    <td><textarea rows="10" cols="60" placeholder="Wpisz wiadomość" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label></label></td>
+                    <td><button type="submit">Wyślij</button>&nbsp;<button type="reset">Wyczyść</button></td>
+                </tr>      
+            </table>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
